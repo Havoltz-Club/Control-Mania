@@ -1,0 +1,22 @@
+clc
+clear all
+close all
+
+% basic matlab plotting
+
+x = linspace(0,2*pi,100);
+y = sin(x);
+
+plot(x,y)
+
+% plotting more than on line
+hold on 
+y2 = cos(x);
+plot(x,y2)
+
+figure()
+t = 10
+f = 
+y = sin(2*pi*5*t);
+
+plot(t,y)
