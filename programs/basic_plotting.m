@@ -4,13 +4,13 @@ close all
 
 % basic matlab plotting
 
-x = linspace(0,2*pi,100);
+x = linspace(0,2*pi,100)
 y = sin(x);
 
 plot(x,y)
 
 % plotting more than on line
-hold on 
+hold on
 y2 = cos(x);
 plot(x,y2)
 

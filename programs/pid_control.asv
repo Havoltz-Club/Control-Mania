@@ -1,0 +1,27 @@
+clc
+clear all
+close all
+
+P = tf([1],[1 10 20]);
+
+step(P)
+
+% Proportional control
+Kp = 300;
+C = pid(Kp);
+T = feedback(C*P,1);
+
+step(T)
+
+% P-D control
+
+Kp = 300;
+Kd = 10;
+
+C = pid(Kp,0,Kd);
+T = feedback(C*P,1);
+
+step(T)
+
+% P-I-D Control
+
